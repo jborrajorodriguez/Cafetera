@@ -18,13 +18,13 @@ public class MaquinaCafe {
         nombreProducto.add(new Producto(1,1,"Chocolate"));
        
         
-        dis.productoAcabado(pro.elaborar(boton.elegirProducto(nombreProducto,mon.inDinero(dis.dineroIN()))));
+        //dis.productoAcabado(pro.elaborar(boton.elegirProducto(nombreProducto,mon.inDinero(dis.dineroIN()))));
         
-//        float f=dis.dineroIN();
-//        boolean aa=mon.inDinero(f);
-//        boolean bb=boton.elegirProducto(nombreProducto,aa);
-//        boolean cc=pro.elaborar(bb);
-//        dis.productoAcabado(cc);
+        float f=Display.dineroIN();
+       boolean aa=mon.inDinero(f);
+        boolean bb=boton.elegirProducto(nombreProducto,aa,f);
+        boolean cc=pro.elaborar(bb);
+        dis.productoAcabado(cc);
         
     }
 
