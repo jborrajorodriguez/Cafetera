@@ -60,6 +60,8 @@ public class Producto {
         boolean productoAcabado;
         if (b==true) {
             System.out.println("Elaborando Producto\n*****\n*****\n*****\n*****\nProducto Elaborado");
+            Display.visualizarVueltaCompletado(Monedero.devolverDineroDeMas());
+            
             return productoAcabado=true;
         }
         else {
