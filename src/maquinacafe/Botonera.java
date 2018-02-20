@@ -13,15 +13,23 @@ public class Botonera {
     private final int mas=2;
     private final int menos=1;
 
-    public static int selecAzu() {
-        int x=Integer.parseInt(JOptionPane.showInputDialog("Quieres mas o menos azucar?"));
-        int azucar=0;
-//        if(x>=mas){
-//            azucar=1;
-//        }else azucar=0;
-        return azucar;
-    }
-
+//    public static int selecAzu() {
+//        int x=Integer.parseInt(JOptionPane.showInputDialog("Quieres mas o menos azucar?"));
+//        int azucar=0;
+////        if(x>=mas){
+////            azucar=1;
+////        }else azucar=0;
+//        return azucar;
+//    }
+    /**
+     * Metodo elegir producto:
+     * 
+     * Este metodo recibe un arrayList de tipo Producto ,un boolean y un float y devuelve un boolean.
+     * @param producto 
+     * @param b
+     * @param cambio
+     * @return true cuando se cumplen las condiciones y false cunado no. 
+     */
     public boolean elegirProducto(ArrayList<Producto> producto,boolean b,float cambio) {
         int opcion;
         boolean productoSel=false;
