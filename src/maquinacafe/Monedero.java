@@ -36,7 +36,11 @@ public class Monedero {
     public static void setCambio(float cambio) {
         Monedero.cambio=cambio;
     }
-
+    /**
+     * Metodo estatico inDinero que recive un valor de tipo float y devuelve un boolean
+     * @param dinero de tipo float
+     * @return un valor de tipo boolean.
+     */
     public static boolean inDinero(float dinero) {
         boolean b;
         if (dinero==precio) {
@@ -55,7 +59,10 @@ public class Monedero {
         }
 
     }
-
+    /**
+     * Metodo estatico devolverDineroDeMas que no recive nada y devuelve un valor de tipo floar
+     * @return un valor de tipo float.
+     */
     public static float devolverDineroDeMas() {
         float total=0;
         if (credito>precio) {
@@ -64,6 +71,10 @@ public class Monedero {
         return total;
 
     }
+    /**
+     * Metodo estatico añadirMasDinero que no recive nada y devuelve n valor de tipo float.
+     * @return un valor de tipo float.
+     */
     public static float añadirMasDinero(){
         float mas=0;
         if(credito<precio){
