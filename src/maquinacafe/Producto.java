@@ -44,18 +44,22 @@ public class Producto {
         this.nombre=nombre;
     }
 
-    public void productos(int x,int azucar,ArrayList<Producto> lis) {
-        lis.add(new Producto(1,azucar,"Cafe"));
-        lis.add(new Producto(1,azucar,"Chocolate"));
-        lis.add(new Producto(1,azucar,"Te"));
-
-    }
+//    public void productos(int x,int azucar,ArrayList<Producto> lis) {
+//        lis.add(new Producto(1,azucar,"Cafe"));
+//        lis.add(new Producto(1,azucar,"Chocolate"));
+//        lis.add(new Producto(1,azucar,"Te"));
+//
+//    }
 
     @Override
     public String toString() {
         return "Producto{"+"precio="+precio+", azucar="+azucar+", nombre="+nombre+'}';
     }
-
+    /**
+     * Metodo elaborar que recive un valor de tipo boolean y que devuelve un valor de tipo boolean
+     * @param b un valor de tipo boolean
+     * @return un valor de tipo boolean
+     */
     public boolean elaborar(boolean b) {
         boolean productoAcabado;
         if (b==true) {
